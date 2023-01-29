@@ -1,0 +1,89 @@
+body {
+    background: url("images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+    position: relative;
+    text-align: center;
+    top: 100px;
+    
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: -70px;
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+    background-color: lightblue;
+    border: 5px solid slategray;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board img {
+    width: 50px;
+    height: 50px;
+}
+
+.popup{
+    background-color: rgb(201, 255, 185);
+    width: 320px;
+    height: 30%;
+    border-radius: 10px;
+    border: 2px solid black;
+    position: absolute;
+    padding: 25px 25px 25px 25px;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    top: 0;
+    left: 50%;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s; 
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup h2{
+    font-family: cursive;
+    top: -25px;
+    font-size: 1.875em;
+}
+
+#result{
+    font-weight: 500;
+    font-size: 1.75em;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px 0;
+    background: white;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    transition: all 0.4 ease 0s;
+}
+
+.popup button:hover{
+    color: white;
+    background-color: red;
+    transition: all 0.4s ease 0s;
+}
